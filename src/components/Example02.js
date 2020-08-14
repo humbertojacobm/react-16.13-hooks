@@ -1,13 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import ChatAPI from './ChatApi.model'
 
-class ChatAPI{
-    subscribeToFriendStatus(value, callback){
-
-    }
-    unsubscribeFromFriendStatus(value, callback){
-
-    }
-}
 
 function FriendStatus(props){
     const [isOnline, setIsOnline] = useState(null);
@@ -18,7 +11,7 @@ function FriendStatus(props){
         }
 
         ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-        
+
         return function cleanUp(){
             ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
         }
