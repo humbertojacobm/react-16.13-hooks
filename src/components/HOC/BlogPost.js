@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useSate, useEffect} from 'react';
 import TextBlock from './TextBlock'
+import { withSubscription } from './WithSubsciption';
 
 const blogPosts = [
     {id: 1, message:"message01"},
@@ -42,6 +43,7 @@ class BlogPost extends React.Component{
         })
     }
     render(){
+
         return(
             <TextBlock text={this.state.blogPost}/>
         )
