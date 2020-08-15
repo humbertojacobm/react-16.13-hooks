@@ -11,6 +11,7 @@ const blogPosts = [
 
 class DataSource{
     getBlogPost(id){
+        debugger;
         return blogPosts.filter(item => item.id === Number(id))[0];
     }
     addChangeListener(callback){
@@ -50,4 +51,14 @@ class BlogPost extends React.Component{
     }
 }
 
-export default BlogPost;
+
+function BlogPostContainer(props){    
+    const BlogPostWithSubscription = withSubscription(BlogPost, (source,props)=> {
+        debugger; 
+        return source.getBlogPost(props.id);
+    });
+    return BlogPostWithSubscription;
+}
+
+export default BlogPostContainer;
+

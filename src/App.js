@@ -8,11 +8,11 @@ import TextInputWithFocusButton from './components/TextInputWithFocusButton'
 import Comment from './components/HOC/Comment'
 import CommentList from './components/HOC/CommentList'
 import TextBlock from './components/HOC/TextBlock'
-import BlogPost from './components/HOC/BlogPost'
+import BlogPostContainer from './components/HOC/BlogPost'
 
 function App() {
   return (
-    <BlogPost id="1"/>
+    <BlogPostContainer id="1"/>
   );
 }
 

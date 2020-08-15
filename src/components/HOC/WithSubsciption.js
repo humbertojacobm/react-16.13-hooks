@@ -1,6 +1,15 @@
 import React, {useState, useEffect} from 'react'
 
+const blogPosts = [
+    {id: 1, message:"message01"},
+    {id: 2, message:"message02"},
+    {id: 3, message:"message03"}
+]
 class DataSource{
+    getBlogPost(id){
+        debugger;
+        return blogPosts.filter(item => item.id === Number(id))[0];
+    }
     addChangeListener(callback){}
     removeChangeListener(callback){}
 }
