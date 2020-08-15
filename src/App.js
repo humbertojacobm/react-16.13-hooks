@@ -9,10 +9,11 @@ import Comment from './components/HOC/Comment'
 import CommentList from './components/HOC/CommentList'
 import TextBlock from './components/HOC/TextBlock'
 import BlogPostContainer from './components/HOC/BlogPost'
+import MouseTracker from './components/RenderProps/MouseTracker'
 
 function App() {
   return (
-    <BlogPostContainer id="1"/>
+    <MouseTracker/>
   );
 }
 
