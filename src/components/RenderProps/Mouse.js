@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
+//props.render
 class Mouse extends React.Component  {
     // eslint-disable-next-line no-useless-constructor
     constructor(props){
@@ -22,7 +23,7 @@ class Mouse extends React.Component  {
                     onMouseMove={this.handleMouseMove}
             >
                 
-                <p>The current mouse position is ({this.state.x}, {this.state.y})</p>
+                {this.props.render(this.state)}
             </div>
         )
     }
