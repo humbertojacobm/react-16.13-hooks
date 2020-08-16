@@ -12,10 +12,12 @@ import BlogPostContainer from './components/HOC/BlogPost'
 import MouseTracker from './components/RenderProps/MouseTracker'
 import AppWithContext from './components/Context/AppWithContext'
 import AppWithContext2 from './components/Context/AppWithContext2'
+import AppMultiContext from './components/Context/ConsumingMultipleContext/AppMultiContext'
+import {themes} from './components/Context/ConsumingMultipleContext/theme-context'
 
 function App() {
   return (
-    <AppWithContext2/>
+    <AppMultiContext signedUser={{name: 'humberto'}} theme='dark'/>
   );
 }
 
