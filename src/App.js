@@ -10,10 +10,11 @@ import CommentList from './components/HOC/CommentList'
 import TextBlock from './components/HOC/TextBlock'
 import BlogPostContainer from './components/HOC/BlogPost'
 import MouseTracker from './components/RenderProps/MouseTracker'
+import AppWithContext from './components/Context/AppWithContext'
 
 function App() {
   return (
-    <MouseTracker/>
+    <AppWithContext/>
   );
 }
 
