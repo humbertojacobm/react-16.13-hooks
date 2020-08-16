@@ -11,10 +11,11 @@ import TextBlock from './components/HOC/TextBlock'
 import BlogPostContainer from './components/HOC/BlogPost'
 import MouseTracker from './components/RenderProps/MouseTracker'
 import AppWithContext from './components/Context/AppWithContext'
+import AppWithContext2 from './components/Context/AppWithContext2'
 
 function App() {
   return (
-    <AppWithContext/>
+    <AppWithContext2/>
   );
 }
 
