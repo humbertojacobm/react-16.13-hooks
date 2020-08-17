@@ -14,10 +14,12 @@ import AppWithContext from './components/Context/AppWithContext'
 import AppWithContext2 from './components/Context/AppWithContext2'
 import AppMultiContext from './components/Context/ConsumingMultipleContext/AppMultiContext'
 import {themes} from './components/Context/ConsumingMultipleContext/theme-context'
+import FirstComponent from './components/refs-dom/01firstComponent'
+import CustomTextInput from './components/refs-dom/02Example/CustomTextInput'
 
 function App() {
   return (
-    <AppMultiContext signedUser={{name: 'humberto'}} theme='dark'/>
+    <CustomTextInput/>
   );
 }
 
